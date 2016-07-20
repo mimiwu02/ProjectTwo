@@ -10,7 +10,7 @@ h1 {
   margin-bottom: 0;
 }
 
-h3, footer, #quote {
+h3, h5, footer, #quote {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 300;
@@ -19,6 +19,7 @@ h3, footer, #quote {
 h3 {
   font-size: 30px;
 }
+
 header {
   height: 20vh;
 }
@@ -37,4 +38,15 @@ footer {
   height: 200px;
   weight: 200px;
   margin-top: 50px;
+}
+
+#quote {
+  margin-top: 100px;
+}
+
+#next-btn {
+  margin-top: 60px;
+  font-size: 20px;
+  background: lightgrey;
+  border-radius: 5px;
 }

@@ -12,6 +12,18 @@ quoteBtn.addEventListener('click', function(ev){
 quoteBtn.style.display= "none";
 quote.style.display= "block";
 
-// var endpoint
+var query = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand"
+
+$.ajax({
+  url: query,
+  dataType: 'jsonp',
+}).done(function(data){
+  console.log(data);
+
+  var content= data[0].content;
+  console.log(content);
+  var newQuote = document.querySelector('quote');
+  newQuote.innerHTML = content;
+});
 });
 }
