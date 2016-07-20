@@ -1,0 +1,40 @@
+/*homepage*/
+body {
+  margin:0;
+}
+h1 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 50px;
+  color: #ee6e73;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+h3, footer, #quote {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 30px;
+}
+header {
+  height: 20vh;
+}
+
+main {
+  height: 75vh;
+  text-align: center;
+  }
+
+footer {
+  height: 5vh;
+  margin: 0;
+}
+
+#quote-icon {
+  height: 200px;
+  weight: 200px;
+  margin-top: 50px;
+}
