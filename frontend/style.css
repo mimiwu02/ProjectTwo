@@ -39,6 +39,7 @@ header {
 main {
   height: 75vh;
   text-align: center;
+  z-index: 1;
   }
 
 footer {
@@ -77,9 +78,9 @@ footer {
 }
 
 
-#question {
+#question, #questionTwo {
   color: #53BBB4;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lily Script One', cursive;
   font-size: 30px;
   margin-bottom: 30px;
   }
@@ -89,3 +90,5 @@ footer {
   height: 100px;
   margin: 20px;
 }
+
+/*Notes Page*/
