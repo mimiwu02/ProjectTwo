@@ -3,14 +3,18 @@ window.onload= function(){
 
 /* This if scripting for the homepage*/
 
+var btnNote = document.getElementById('btn-note');
 var quote = document.getElementById('quote'); //hide the quote on load
 quote.style.display = "none";
 
 var quoteBtn = document.getElementById('quote-icon');
 quoteBtn.addEventListener('click', function(ev){
   ev.preventDefault();
+btnNote.style.display= "none";
 quoteBtn.style.display= "none";
 quote.style.display= "block";
+
+
 
 
 var endpoint = "http://quotesondesign.com/wp-json/posts"
