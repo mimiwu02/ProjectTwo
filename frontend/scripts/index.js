@@ -1,7 +1,7 @@
-window.onload= function(){
+function dothis(){
   console.log("happy thoughts");
 
-/* This if scripting for the homepage*/
+/***** Part 1 - This is scripting for the homepage*****/
 
 var btnNote = document.getElementById('btn-note');
 var quote = document.getElementById('quote'); //hide the quote on load
@@ -13,8 +13,6 @@ quoteBtn.addEventListener('click', function(ev){
 btnNote.style.display= "none";
 quoteBtn.style.display= "none";
 quote.style.display= "block";
-
-
 
 
 var endpoint = "http://quotesondesign.com/wp-json/posts"
@@ -33,4 +31,12 @@ $.ajax({
   newQuote.innerHTML = content;
 });
 });
-}
+}//end of part 1
+
+/***** Part 2 - This is scripting for the actions page*****/
+function dothat() {
+var currentDate = Date();
+document.getElementById('currentDate').innerHTML= "Today is" + " " + currentDate;
+}//end of part 2
+
+/***** Part 3 - This is scripting for the notes page*****/
