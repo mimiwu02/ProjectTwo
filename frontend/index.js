@@ -12,17 +12,20 @@ quoteBtn.addEventListener('click', function(ev){
 quoteBtn.style.display= "none";
 quote.style.display= "block";
 
-var query = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand"
+
+var endpoint = "http://quotesondesign.com/wp-json/posts"
+var query = endpoint + "?filter[orderby]=rand&filter[posts_per_page]=" + Math.floor(Math.random()*50); // randomizes the amount of post per page so it returns a different quote everytime page refreshes
+console.log(query);
+
 
 $.ajax({
-  url: query,
-  dataType: 'jsonp',
+  url: query
 }).done(function(data){
   console.log(data);
 
-  var content= data[0].content;
+  var content= data[0].content + "<p>&mdash; " + data[0].title;
   console.log(content);
-  var newQuote = document.querySelector('quote');
+  var newQuote = document.getElementById('quote');
   newQuote.innerHTML = content;
 });
 });
