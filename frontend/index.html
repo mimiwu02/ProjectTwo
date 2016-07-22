@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Homepage</title>
     <link rel="icon" href="images/unicorn.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -32,6 +32,7 @@
     </div>
     <!-- end of homepage -->
 
+
     <!-- Part 2 - Begin page for actions -->
     <div class = "actions">
       <header>
@@ -50,6 +51,7 @@
     </div>
     <!-- End of actions page -->
 
+
     <!-- Part 3 - Begin page for notes -->
     <div class = "notes">
       <header>
@@ -59,10 +61,46 @@
       <main>
         <h1 id="questionTwo">What is on your mind?</h1>
         <img id="background" src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/135/1355/1355092/h58vxj0z2wz7kv6bcnh0oluql4eozgzuokalvictjrcrdee6xakyude5glrkxcqq-f.jpg?1465574296" alt="background"/>
+        <span id = "date"></span>
         <textarea id="textBox" name="note" rows="8" cols="40"></textarea>
+        <button id="save-btn" type="button" name="save">save</button>
+        <button id="see-all-btn" type="button" name="see-all">all notes</button>
+
+        <section class="current-entries">
+          <!-- See All: -->
+          <div id="all-div">
+            <p><b>All Notes:</b></p>
+            <ul id="entries-list">
+              <p id = "timestamp"></p>
+          <!-- append all notes here -->
+          </ul>
+          <br><hr>
+          </div>
+
+
+
       </main>
     </div>
     <!-- End of notes page -->
+
+
+
+
+
+      <!-- Part 4 - Begin page for weather -->
+
+      <!-- End of weather page -->
+
+
+      <!-- Part 5 - Begin page for news -->
+
+      <!-- End of news page -->
+
+
+
+
+
+
 
 
 
